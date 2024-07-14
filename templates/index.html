@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="initialButtons">
+            <div class="button-container">
+                <button id="addTextBtn">Добавить текст</button>
+            </div>
+            <div class="button-container">
+                <button id="addButtonsBtn">Добавить кнопки</button>
+            </div>
+            <div class="button-container">
+                <button id="addImageBtn">Добавить картинку</button>
+            </div>
+        </div>
+        <div class="sidebar" id="textInputContainer" style="display: none;">
+            <textarea id="textInput" placeholder="Введите текст"></textarea>
+            <button id="insertUsernameBtn">Добавить имя пользователя</button>
+            <button id="submitTextBtn">Добавить</button>
+            <button id="backBtnFromText">Назад</button>
+        </div>
+        <div class="sidebar" id="buttonInputContainer" style="display: none;">
+            <div id="buttonInputs">
+                <input type="text" placeholder="Название кнопки" class="button-input">
+            </div>
+            <button id="addNewButtonInputBtn">Новая кнопка</button>
+            <button id="submitButtonsBtn">Добавить</button>
+            <button id="backBtnFromButtons">Назад</button>
+        </div>
+        <div class="sidebar" id="imageInputContainer" style="display: none;">
+            <input type="file" id="imageFileInput" accept="image/*">
+            <input type="text" id="imageUrlInput" placeholder="URL картинки">
+            <input type="text" id="imageNameInput" placeholder="Имя файла (опционально)">
+            <button id="submitImageBtn">Добавить</button>
+            <button id="backBtnFromImage">Назад</button>
+        </div>
+        <div class="content" id="contentArea">
+            <!-- Сообщения будут добавляться сюда -->
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
